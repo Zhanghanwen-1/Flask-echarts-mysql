@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link REL="SHORTCUT ICON" HREF="../static/img/favicon.ico">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <script src="../static/js/time.js"></script>
+    <script src="../static/js/echarts.js"></script>
+    <script src="../static/js/jquery-3.5.1.js"></script>
+    <script src="../static/js/map.js"></script>
+    <title>Hello</title>
+</head>
+<body>
+<header>
+    <h1>海洋智慧养殖监测平台</h1>
+    <div id="timeShow"></div>
+</header>
+<!--页面内容-->
+<section class="main_box">
+<!--导航栏-->
+    <div class="nav">
+        <div class="total">
+            <div class="map" onclick="total_map()">总览地图</div>
+            <div class="comp" onclick="total_comp()">对比图</div>
+        </div>
+        <div class="dong">
+            <div class="name">东极</div>
+{#            <div class="site">#}
+{#            <div class="select_box">#}
+{#                <span>监测点1</span>#}
+{#                <ul>#}
+{#                    <li>监测点1</li>#}
+{#                    <li>监测点2</li>#}
+{#                    <li>监测点3</li>#}
+{#                </ul>#}
+{#            </div>#}
+{#        </div>#}
+            <div class="content">
+            <div class="select_box">
+                <span>视频</span>
+                <ul>
+                    <li>视频</li>
+                    <li>水质</li>
+                    <li>生物品质</li>
+                    <li>饲料</li>
+                    <li>病害</li>
+                    <li>状态数据</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="tao">
+            <div class="name">桃花</div >
+{#            <div class="site">#}
+{#            <div class="select_box">#}
+{#                <span>监测点1</span>#}
+{#                <ul>#}
+{#                    <li>监测点1</li>#}
+{#                    <li>监测点2</li>#}
+{#                    <li>监测点3</li>#}
+{#                </ul>#}
+{#            </div>#}
+{#        </div>#}
+    <div class="content">
+            <div class="select_box">
+                <span>视频</span>
+                <ul>
+                    <li>视频</li>
+                    <li>水质</li>
+                    <li>生物品质</li>
+                    <li>饲料</li>
+                    <li>病害</li>
+                    <li>状态数据</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="sheng">
+            <div class="name">嵊泗</div>
+{#            <div class="site">#}
+{#            <div class="select_box">#}
+{#                <span>监测点1</span>#}
+{#                <ul>#}
+{#                    <li>监测点1</li>#}
+{#                    <li>监测点2</li>#}
+{#                    <li>监测点3</li>#}
+{#                </ul>#}
+{#            </div>#}
+{#        </div>#}
+        <div class="content">
+            <div class="select_box">
+                <span>视频</span>
+                <ul>
+                    <li>视频</li>
+                    <li>水质</li>
+                    <li>生物品质</li>
+                    <li>饲料</li>
+                    <li>病害</li>
+                    <li>状态数据</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+<!--        <div class="big_nav">
+            <button class="title1">总览</button>
+        </div>
+        -->
+<!--右侧：数据展示-->
+    <div class="show">
+        <div class="map" id="map1"></div>
+        <div class="comp" id="comp">
+            <div class="comp_box" id="chart1">co2</div>
+            <div class="comp_box" id="chart2">硬度</div>
+            <div class="comp_box" id="chart3">ph</div>
+            <div class="comp_box" id="chart4">溶氧量</div>
+            <div class="comp_box" id="chart5">水温</div>
+            <div class="comp_box" id="chart6">盐度</div>
+        </div>
+    </div>
+</section>
+
+<script src="../static/js/select_box.js"></script>
+<script src="../static/js/charts.js"></script>
+<script src="../static/js/total.js"></script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=5da1bd5b25b8c02c0359b950d04e0c7e&callback=init"></script>
+
+</body>
+</html>
